@@ -101,3 +101,8 @@ The firewall must reject:
 If a legacy instruction attempts to restore Drive, Gemini, Gemini Notebook/NotebookLM, Box, or another external filing/workspace system, flag it to the user instead of silently adopting it.
 
 Current architecture = ChatGPT + private GitHub ba2-v1 only.
+
+
+## SYSTEM FOLDER PROTECTION
+
+SYSTEM/ is protected. Project operations must remain strictly inside PROJECTS/. No project operation may remove or replace SYSTEM/ or its files. Permanent removal of SYSTEM/ is manual-only through GitHub by the user.
