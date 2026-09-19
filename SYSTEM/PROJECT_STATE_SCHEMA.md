@@ -58,7 +58,11 @@
 ## EXTERNAL WORKSPACE STATUS
 - ChatGPT Project Native: UNKNOWN
 - GitHub Project Folder: UNKNOWN
-- Other external systems: NONE / SPECIFY
+- Other external systems: NOT PART OF CURRENT ARCHITECTURE
+
+## USER-FACING LANGUAGE
+- Status, stage, objective, task, priorities, confirmations, warnings, and system reports shown to the user must be presented in Turkish.
+- Internal field names and machine-readable identifiers may remain English when technically necessary.
 
 ## INITIALIZATION CHECKLIST
 - [ ] Project identity established
