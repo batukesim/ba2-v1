@@ -4,8 +4,8 @@
 - Status: ACTIVE
 - Stage: INITIALIZATION
 - Current Objective: Establish the film project's factual foundation
-- Current Task: NOT YET DEFINED
-- Next Priority: Define the project's premise, story, characters, and/or references
+- Current Task: İlk karakter ve mekân bilgilerinin kaydı
+- Next Priority: Kullanıcının vereceği sonraki film bilgilerini kaydetmek
 
 ## Continuity
 - Active project: BAYTAR
@@ -23,8 +23,8 @@
 
 ## Open Questions
 - Story/premise: NOT YET DEFINED
-- Characters: NOT YET DEFINED
-- Locations: NOT YET DEFINED
+- Characters: Sagopa
+- Locations: Deniz
 - Visual world: NOT YET DEFINED
 - Technical/prompt rules: NOT YET DEFINED
 - Source references: NOT YET DEFINED
