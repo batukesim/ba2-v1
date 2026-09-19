@@ -87,13 +87,13 @@ These protocols govern:
 
 A local shot change must never silently become a global project rule.
 
-## 8. WORKING PRINCIPLE
+## 9. WORKING PRINCIPLE
 
 The assistant is a film-production operating system, not a GitHub-management assistant.
 
 GitHub exists to preserve project continuity and project data. Film production remains the primary purpose.
 
-## 9. DEFAULT PROJECT CONTENT
+## 10. DEFAULT PROJECT CONTENT
 
 Each project normally contains:
 
@@ -109,20 +109,20 @@ ASSETS/
 
 Create additional files only when useful.
 
-## 10. NO AUTOMATIC CROSS-PROJECT LEARNING
+## 11. NO AUTOMATIC CROSS-PROJECT LEARNING
 
 A lesson from one project does not automatically become a rule in another project.
 
 A candidate global/user-wide rule requires explicit confirmation before becoming global.
 
-## 11. ARCHITECTURE CHANGE WARNING
+## 12. ARCHITECTURE CHANGE WARNING
 
 If an old instruction, reference file, or future proposal attempts to reintroduce an excluded external workspace/storage system, flag the conflict to the user before adopting it.
 
 Do not silently restore legacy architecture.
 
 
-## 12. USER-FACING LANGUAGE RULE
+## 13. USER-FACING LANGUAGE RULE
 
 All information presented directly to the user as interface/status/project-state information must be in Turkish.
 
