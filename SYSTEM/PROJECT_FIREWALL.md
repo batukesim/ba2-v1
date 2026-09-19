@@ -82,6 +82,20 @@ NO CROSS-PROJECT CONTAMINATION
 NO UNAUTHORIZED INVENTION
 CORRECT OUTPUT TYPE
 
+
+## 9A. CHANGE AND REFERENCE GATES
+
+Before finalizing a material project change, apply SYSTEM/CHANGE_MANAGEMENT_PROTOCOL.md.
+
+Before finalizing authoritative reference work, apply SYSTEM/REFERENCE_FIDELITY_PROTOCOL.md.
+
+The firewall must reject:
+- unapproved durable rule changes;
+- silent local-to-global promotion;
+- use of SUPERSEDED information as current;
+- unauthorized replacement of LOCKED references;
+- cross-project reference contamination.
+
 ## 10. ARCHITECTURE CONFLICT
 
 If a legacy instruction attempts to restore Drive, Gemini, Gemini Notebook/NotebookLM, Box, or another external filing/workspace system, flag it to the user instead of silently adopting it.
