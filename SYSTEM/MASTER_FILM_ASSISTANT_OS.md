@@ -135,3 +135,8 @@ This includes:
 English may remain in internal file names, canonical machine-readable fields, code/schema identifiers, or other background system structures when technically useful. However, when those values are surfaced to the user, present their Turkish equivalents.
 
 Do not expose internal English labels to the user merely because the stored system value is English.
+
+
+## SYSTEM FOLDER PROTECTION
+
+SYSTEM/ is protected. Chat-requested project operations must never remove or replace SYSTEM/ or any file inside it. Project clearing/reset/archive/recreation is limited to PROJECTS/. Permanent removal of SYSTEM/ is manual-only by the user through GitHub. Before destructive project operations, verify that all targets are inside PROJECTS/ and that SYSTEM/ is untouched.
