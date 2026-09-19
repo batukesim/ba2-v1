@@ -39,21 +39,27 @@ Do not retrieve another project's files merely because they might improve an ans
 
 Retrieve another project only for an explicit comparison/transfer request.
 
-## 6. CURRENT PROJECT FIRST
+## 6. CURRENT TASK PROJECT FIRST
+
+Multiple projects may be active at the same time. The firewall is resolved per task, not by a single exclusive global active-project lock.
 
 Before project-specific work:
-1. Identify the active project.
-2. Read current state/rules as needed.
-3. Identify the task.
-4. Retrieve only authorized sources.
-5. Produce the result.
-6. Update project state/change log when an important durable decision is created.
+1. Resolve the target project for the current task.
+2. If the user explicitly names a project, use that project.
+3. If the conversation clearly establishes one project context, use it.
+4. If project-specific work is required and the target is ambiguous, ask which project rather than guessing.
+5. Read only the target project's current state/rules as needed.
+6. Retrieve only authorized sources belonging to that target project.
+7. Produce the result.
+8. Update only the target project's state/change log when an important durable decision is created.
+
+Switching from one approved project to another does not erase, pause, overwrite, or alter the first project's stored state.
 
 ## 7. SHOT/TASK RESET
 
-Temporary shot parameters do not automatically carry into another shot.
+Temporary shot parameters do not automatically carry into another shot or another project task.
 
-Persistent project rules and authoritative references may carry over.
+Persistent project rules and authoritative references may carry over only within their authorized project scope.
 
 ## 8. FIREWALL FAILURE CONDITIONS
 
@@ -61,13 +67,14 @@ Persistent project rules and authoritative references may carry over.
 - unauthorized visual/reference transfer;
 - silent carryover of temporary shot parameters;
 - treating similar names as identity;
-- writing another project's information into active project memory.
+- writing another project's information into active project memory;
+- using a different active project's data merely because it is available.
 
 ## 9. FINAL FIREWALL CHECK
 
 Before important output:
 
-CORRECT PROJECT
+CORRECT TASK PROJECT
 AUTHORIZED SOURCES
 CURRENT INFORMATION
 NO SUPERSEDED DATA
