@@ -6,3 +6,9 @@
 - GitHub project structure initialized.
 - Initial state, rules, memory, and project identity files created.
 - Native ChatGPT Project creation/status remains NOT VERIFIED.
+
+
+## 2026-09-19
+### TEST DATA RECORDED
+- İlk karakter bilgisi: Sagopa.
+- İlk mekân bilgisi: Deniz.
