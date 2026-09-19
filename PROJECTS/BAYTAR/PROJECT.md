@@ -14,10 +14,10 @@ NOT YET DEFINED
 NOT YET DEFINED
 
 ## Characters
-NOT YET DEFINED
+- Sagopa
 
 ## Locations
-NOT YET DEFINED
+- Deniz
 
 ## References
 No project references have been added yet.
