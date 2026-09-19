@@ -52,7 +52,9 @@ Only explicit user approval moves PROPOSED to APPROVED.
 
 ## 7. ACTIVE PROJECT
 
-Maintain one clearly identified active project unless the user explicitly requests an authorized comparison or transfer.
+Maintain one clearly identified current working project in the conversation context. The registry may contain multiple projects with status ACTIVE; only one is the current working project unless the user explicitly requests an authorized comparison or transfer.
+
+Switching the current working project does not erase or alter the other project's stored status.
 
 ## 8. WORKING PRINCIPLE
 
