@@ -6,74 +6,59 @@ Define exactly what happens when the user asks to start a new film project.
 
 ## A. DETECTION
 
-When the user indicates a new project, determine whether it is:
-
+Determine whether the request is:
 - a genuinely new project;
-- a continuation/reopening of an existing project;
-- an ambiguous request.
+- a continuation/reopening;
+- ambiguous.
 
-Check the available BA2-V1 project registry and relevant project names before creating anything.
-
-Never resolve ambiguity by importing another project's information.
+Check the BA2-V1 project registry before creating anything.
 
 ## B. PROPOSAL STAGE
 
-For a genuinely new project, create a proposal in the response only.
+For a genuinely new project, respond with a proposal only.
 
-Minimum proposal:
+Include:
 - Project name
 - Project type, if known
 - Purpose/description, if known
 - Main reference, if supplied
-- What will be created after approval
+- What will happen after approval
 
-Do NOT create the GitHub project folder or claim a ChatGPT Project has been created before explicit approval.
+Do NOT create the GitHub project folder before explicit approval.
 
 Status = PROPOSED.
 
 ## C. APPROVAL
 
-Explicit approval includes clear equivalents such as:
-
-"Evet."
-"Onaylıyorum."
-"Başlat."
-"Projeyi oluştur."
-"Devam et."
-"Create it."
-"Start it."
+Clear approval includes:
+"Evet", "Onaylıyorum", "Başlat", "Projeyi oluştur", "Devam et", or equivalent unambiguous confirmation.
 
 Ambiguous discussion is not approval.
 
 ## D. INITIALIZATION AFTER APPROVAL
 
-After explicit approval, execute the supported initialization actions without asking for a second project-creation command.
+After explicit approval, execute supported initialization actions without requesting a second creation command.
 
-Required logical package:
-
-1. Project identity
-2. Project state
-3. Project memory
-4. Project rules
-5. Change log
-6. Project references area
-7. Prompt area
-8. Scene area
-9. Asset area
-10. ChatGPT Project status, only if native creation is actually available
-11. GitHub project folder and files
+1. Establish project identity.
+2. Initialize project state.
+3. Initialize project memory.
+4. Initialize project rules.
+5. Initialize change log.
+6. Create project reference/prompt/scene/asset structure.
+7. Create the GitHub project folder/files.
+8. Determine and report ChatGPT Project native status truthfully.
 
 ## E. CHATGPT PROJECT
 
-The assistant must distinguish between:
+Distinguish:
 
-CHATGPT_PROJECT_LOGICAL = the project concept and its state.
+CHATGPT_PROJECT_LOGICAL = the project concept/state tracked by this system.
 
-CHATGPT_PROJECT_NATIVE = an actual Project object created in the ChatGPT interface.
+CHATGPT_PROJECT_NATIVE = an actual Project object in the ChatGPT interface.
 
-If native Project creation is unavailable to the assistant, do not claim it was created.
+Never claim native creation without direct verification.
 
-The user may manually create the ChatGPT Project with the exact approved project name. The GitHub project remains the persistent external file system.
+If native creation is not available through the current environment, report that fact. Do not simulate it.
 
 ## F. GITHUB INITIALIZATION
 
@@ -90,69 +75,57 @@ PROJECTS/<PROJECT-SLUG>/
     SCENES/
     ASSETS/
 
-PROJECT.md must contain identity and purpose.
+PROJECT.md = identity and purpose.
+RULES.md = approved project-specific rules only.
+STATE.md = current stage/objective/task/open questions/references/recent changes/next priority.
+MEMORY.md = durable project facts and decisions.
+CHANGELOG.md = important project changes.
 
-RULES.md contains only approved project-specific rules.
+Use README.md placeholders only when a directory needs a tracked file to exist.
 
-STATE.md contains current stage, objective, task, open questions, active references, recent changes, and next priority.
+## G. MISSING INFORMATION
 
-MEMORY.md contains durable project facts and decisions.
+Never invent missing project information.
 
-CHANGELOG.md records important approved changes.
-
-Empty directories may be represented by a README.md placeholder when GitHub requires a file to materialize the directory.
-
-## G. INITIAL PROJECT RECORD
-
-Do not invent missing details.
-
-Use "NOT YET DEFINED" where a required field is not yet known.
+Use "NOT YET DEFINED" where appropriate.
 
 ## H. INITIAL STATUS
 
-After successful GitHub creation:
+After successful GitHub initialization:
 
-Project status = ACTIVE.
+ACTIVE.
 
-If a required physical operation fails, status must reflect the actual partial state, for example:
-
+If only part of initialization succeeds, record the real partial state, e.g.:
 ACTIVE — GITHUB_INITIALIZED
 ACTIVE — CHATGPT_PROJECT_PENDING
 
-Never hide partial initialization.
-
 ## I. IDEMPOTENCY / RECOVERY
 
-Before creating anything, check whether the project folder already exists.
+Before creating a project, verify that the target folder does not already exist.
 
 If it exists:
 - do not duplicate it;
 - inspect its state;
-- determine whether this is a continuation or incomplete initialization;
-- repair only the missing pieces;
-- do not overwrite established project data without authorization.
+- treat it as continuation/incomplete initialization as appropriate;
+- repair only missing pieces;
+- never overwrite established data without authorization.
 
 ## J. INITIALIZATION REPORT
 
-Report:
+Report only verified facts:
 - Project name
 - Project ID/slug
 - GitHub path
-- GitHub creation result
+- GitHub result
 - ChatGPT Project native status
-- Current project status
+- Current status
 - Files initialized
-- Any operation that could not be performed
-
-Only report verified operations as completed.
+- Any unsupported/failed operation
 
 ## K. NO SECOND-COMMAND RULE
 
-Once the user has explicitly approved project creation, do not ask separately for:
-- "Create the GitHub folder"
-- "Create the files"
-- "Create the ChatGPT Project"
+After explicit approval, do not separately ask permission for each supported initialization operation.
 
-Execute every operation actually supported by the environment.
+Execute what the environment actually supports.
 
-Unsupported native operations must be reported, not simulated.
+Never simulate unsupported operations.
