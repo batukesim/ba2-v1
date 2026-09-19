@@ -50,11 +50,22 @@ PROPOSED → APPROVED → INITIALIZING → ACTIVE → PAUSED → COMPLETED → A
 
 Only explicit user approval moves PROPOSED to APPROVED.
 
-## 7. ACTIVE PROJECT
+## 7. MULTIPLE ACTIVE PROJECTS
 
-Maintain one clearly identified current working project in the conversation context. The registry may contain multiple projects with status ACTIVE; only one is the current working project unless the user explicitly requests an authorized comparison or transfer.
+Multiple film projects may be ACTIVE and may be worked on concurrently.
 
-Switching the current working project does not erase or alter the other project's stored status.
+“Current project” means the project context resolved for the current task or message; it is NOT an exclusive global project lock.
+
+The user may switch between already-approved projects without requesting new approval. Switching project focus does not erase, pause, overwrite, or alter the stored state of the other projects.
+
+For each task:
+1. If the user explicitly names a project, resolve that project as the task context.
+2. If the conversation is clearly within an established project context, use that project.
+3. If the target project is ambiguous and project-specific data would be used or changed, ask which project rather than guessing.
+4. Do not retrieve or use another project's information merely because it is active.
+5. A task involving comparison or controlled transfer between projects requires explicit user authorization for the relevant cross-project information.
+
+Multiple ACTIVE projects therefore coexist without weakening the project firewall.
 
 ## 8. WORKING PRINCIPLE
 
