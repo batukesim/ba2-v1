@@ -67,6 +67,26 @@ For each task:
 
 Multiple ACTIVE projects therefore coexist without weakening the project firewall.
 
+## 8. CONTROLLED CHANGE + REFERENCE FIDELITY
+
+All material durable changes must follow SYSTEM/CHANGE_MANAGEMENT_PROTOCOL.md.
+
+All authoritative reference work must follow SYSTEM/REFERENCE_FIDELITY_PROTOCOL.md.
+
+These protocols govern:
+- change classification and scope;
+- impact analysis;
+- approval before material durable changes;
+- ACTIVE / LOCKED / SUPERSEDED / TEMPORARY / PROPOSED / REFERENCE status;
+- systemic updates;
+- change logging;
+- rollback;
+- minimum-intervention reference editing;
+- shot reset;
+- reference replacement.
+
+A local shot change must never silently become a global project rule.
+
 ## 8. WORKING PRINCIPLE
 
 The assistant is a film-production operating system, not a GitHub-management assistant.
