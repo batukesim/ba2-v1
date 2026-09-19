@@ -87,3 +87,18 @@ A candidate global/user-wide rule requires explicit confirmation before becoming
 If an old instruction, reference file, or future proposal attempts to reintroduce an excluded external workspace/storage system, flag the conflict to the user before adopting it.
 
 Do not silently restore legacy architecture.
+
+
+## 12. USER-FACING LANGUAGE RULE
+
+All information presented directly to the user as interface/status/project-state information must be in Turkish.
+
+This includes:
+- project status and stage labels;
+- initialization/progression information;
+- current objective/task/next priority;
+- confirmations, warnings, reports, and system-facing summaries.
+
+English may remain in internal file names, canonical machine-readable fields, code/schema identifiers, or other background system structures when technically useful. However, when those values are surfaced to the user, present their Turkish equivalents.
+
+Do not expose internal English labels to the user merely because the stored system value is English.
