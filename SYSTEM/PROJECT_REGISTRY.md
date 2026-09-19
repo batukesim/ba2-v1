@@ -16,3 +16,7 @@ This file is the index of film projects stored in this repository.
 - Completed/archived projects remain listed with their final status.
 - Current external architecture is limited to ChatGPT + private GitHub.
 - Legacy external filing/workspace systems are not part of the active architecture unless the user explicitly reintroduces them.
+
+## Current Working Project
+
+KOTU-INSANLARI-TANIMA-SENESI
