@@ -1,1 +1,0 @@
-BA2 v1 GitHub writeFile API operation test.
