@@ -7,7 +7,6 @@ This file is the index of film projects stored in this repository.
 | TEST-INIT-001 | BA2 TEST PROJECT | ACTIVE | PROJECTS/BA2-TEST-PROJECT/ |
 | BAYTAR | BAYTAR | ACTIVE | PROJECTS/BAYTAR/ |
 | KOTU-INSANLARI-TANIMA-SENESI | Kötü İnsanları Tanıma Senesi | ACTIVE | PROJECTS/KOTU-INSANLARI-TANIMA-SENESI/ |
-| ROMANTIZMA-001 | Romantizma | ACTIVE | PROJECTS/Romantizma/ |
 
 ## Rules
 
