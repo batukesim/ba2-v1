@@ -1,4 +1,4 @@
-name: BA2 Authorized Test File Cleanup
+name: BA2 Cleanup Workflow
 
 on:
   push:
@@ -12,75 +12,22 @@ jobs:
   cleanup:
     if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout v4
         with:
           fetch-depth: 0
 
-      - name: Remove test-named files
+      - name: Remove temporary cleanup workflow
         shell: bash
         run: |
-          set -euo pipefail
-
-          git ls-files -z | python -c '
-          import sys
-          from pathlib import Path
-
-          for raw in sys.stdin.buffer.read().split(b"\0"):
-              if not raw:
-                  continue
-
-              path = raw.decode("utf-8")
-              name = Path(path).name.lower()
-
-              if "test" not in name:
-                  continue
-
-              if path == "README.md":
-                  continue
-
-              if path.startswith("SYSTEM/"):
-                  continue
-
-              if name == "master.md" or name.startswith("master_"):
-                  continue
-
-              if path == ".github/workflows/ba2-authorized-test-file-cleanup.yml":
-                  continue
-
-              print(path)
-          ' > /tmp/test-files.txt
-
-          while IFS= read -r path; do
-            [ -n "$path" ] || continue
-            echo "Removing: $path"
-            rm -f -- "$path"
-          done < /tmp/test-files.txt
-
-      - name: Commit cleanup
-        shell: bash
-        run: |
-          set -euo pipefail
-
+          set -e
+          rm -f .github/workflows/ba2-authorized-test-file-cleanup.yml
           git config user.name "BA2 Cleanup"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
           if git diff --cached --quiet; then
-            echo "No matching test-named files found."
             exit 0
-          fi
-          git commit -m "Delete test-named files"
-          git push origin HEAD:main
-
-      - name: Remove cleanup workflow
-        shell: bash
-        run: |
-          set -euo pipefail
-          rm -f -- .github/workflows/ba2-authorized-test-file-cleanup.yml
-          git add -A
           fi
           git commit -m "Remove temporary cleanup workflow"
           git push origin HEAD:main
- 
