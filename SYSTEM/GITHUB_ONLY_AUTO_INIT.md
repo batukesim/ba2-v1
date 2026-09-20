@@ -1,0 +1,2 @@
+GITHUB ONLY
+Single approval gate. After explicit approval, execute the complete project bootstrap automatically with no intermediate user confirmations. Create/verify PROJECTS/<SLUG>/, required project files, standard folders, capture all supplied project information, update SYSTEM/PROJECT_REGISTRY.md, and verify results. Gemini workspace/Notebook is not used. GitHub is the physical source of truth.
